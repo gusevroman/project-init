@@ -1,5 +1,6 @@
 echo '// ProjectInit ver. 0.9 //'
 echo 'https://github.com/ilya-mikhaylov/project-init'
+echo 'https://raw.githubusercontent.com/gusevroman/project-init/master/init.sh'
 echo ''
 echo 'This script will download ESLint Airbnb config, create .gitignore and .eslintrc.js in your project folder.'
 echo ''

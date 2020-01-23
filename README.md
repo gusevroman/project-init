@@ -13,6 +13,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/ilya-mikhaylov/project-init/ma
 ```
 
 update
+bash <(curl -Ls https://raw.githubusercontent.com/gusevroman/project-init/master/init.sh)
 
 
 Current version is tested on Ubuntu 19.10. Don't forget to setup ESLint in your IDE correctly first.
