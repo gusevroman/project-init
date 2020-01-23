@@ -1,28 +1,31 @@
 {
-  "name": "project-init",
-  "version": "1.0.0",
-  "description": "CHANGELIST: version 0.9 (21.11.2019) - first release, testing.",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ilya-mikhaylov/project-init.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ilya-mikhaylov/project-init/issues"
-  },
-  "homepage": "https://github.com/ilya-mikhaylov/project-init#readme",
-  "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
-  }
+    "name": "project-init",
+    "version": "1.0.0",
+    "description": "CHANGELIST: version 0.9 (23.01.2020) - 1.1 release, testing.",
+    "main": "index.js",
+    "dependencies": {
+        "jest": "^25.1.0"
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ilya-mikhaylov/project-init.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ilya-mikhaylov/project-init/issues"
+    },
+    "homepage": "https://github.com/ilya-mikhaylov/project-init#readme",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-plugin-import": "^2.20.0"
+    }
 }
