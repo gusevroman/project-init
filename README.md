@@ -12,9 +12,10 @@ It can be called by entering this command in the root of your project:
 bash <(curl -Ls https://raw.githubusercontent.com/ilya-mikhaylov/project-init/master/init.sh)
 ```
 
-update
+update:
+```
 bash <(curl -Ls https://raw.githubusercontent.com/gusevroman/project-init/master/init.sh)
-
+```
 
 Current version is tested on Ubuntu 19.10. Don't forget to setup ESLint in your IDE correctly first.
 Feel free to contact and maintain this small project and don't forget to report issues.
