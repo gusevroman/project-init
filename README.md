@@ -1,7 +1,7 @@
-# ProjectInit v.1.0
+# ProjectInit v.1.0.1
 
 CHANGELIST:
-version 1.01 (25.11.202) - added Jest.
+version 1.0.1 (25.11.202) - added Jest.
 version 1.0 (28.11.2019) - mac instructions update
 version 0.9 (21.11.2019) - first release, testing.
 
