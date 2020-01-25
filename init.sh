@@ -38,8 +38,9 @@ module.exports = {
 EOF
 
 cat >> package.json << EOF
-json -I -f package.json -e 'this.test="jest"'
-json: updated "package.json" in-place
+"scripts": {
+        "test": "jest"
+    },
 EOF
 
 cat >> .gitignore << EOF
