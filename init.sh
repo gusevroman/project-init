@@ -1,23 +1,30 @@
-echo '// ProjectInit ver. 0.9 //'
+echo '// ProjectInit ver. 1.0.1 //'
+echo ''
 echo 'https://github.com/ilya-mikhaylov/project-init'
 echo 'https://raw.githubusercontent.com/gusevroman/project-init/master/init.sh'
 echo ''
-echo 'This script will download ESLint Airbnb config, create .gitignore and .eslintrc.js in your project folder.'
+echo 'https://github.com/gusevroman/project-init'
+echo 'https://raw.githubusercontent.com/gusevroman/project-init/master/init.sh'
+echo ''
+echo 'This script will download ESLint Airbnb config, create .gitignore' 
+echo 'and .eslintrc.js, edite package.json in your project folder.'
 echo ''
 
 # 'read' lets user to set the value of '$prompt' variable.
 
 # Condition that checks value of '$prompt' variable.
 
-
+# install ESLint Airbnb config
 npm init -yes
 npm install eslint eslint-config-airbnb-base eslint-plugin-import -D
 
+# install Jest and make dit __tests__
 npm install --save-dev jest
 jest --init
 mkdir __tests__
 
-
+# install json for edite package.json
+npm install --save-dev json
 
 # '>>' option of 'cat' adds fragment between two EOFs to the end to .gitignore. Creates new one, if it doesn't exist.
 
@@ -28,6 +35,11 @@ module.exports = {
         "browser": true
     }
 }
+EOF
+
+cat >> package.json << EOF
+json -I -f package.json -e 'this.test="jest"'
+json: updated "package.json" in-place
 EOF
 
 cat >> .gitignore << EOF
