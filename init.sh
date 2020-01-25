@@ -25,6 +25,7 @@ mkdir __tests__
 
 # install json for edite package.json
 npm install --save-dev json
+npx json -I -f package.json -e 'this.scripts.test="jest"'
 
 # '>>' option of 'cat' adds fragment between two EOFs to the end to .gitignore. Creates new one, if it doesn't exist.
 
@@ -38,9 +39,6 @@ module.exports = {
 EOF
 
 cat >> package.json << EOF
-"scripts": {
-        "test": "jest"
-    },
 EOF
 
 cat >> .gitignore << EOF
